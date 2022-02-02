@@ -1,0 +1,133 @@
+:root{
+    --primary-color: rgb(23, 139, 247);
+    --white-color: rgb(255, 255, 255);
+    --bg-color: rgb(234, 252, 255);
+    --banner-color: rgba(234, 252, 255, 0.209);
+    --nav-bg-color: rgb(110, 177, 240);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    padding: 1.3em;
+}
+header h1{
+   color: var(--white-color);
+   padding: 8px 12px;
+   border: 8px solid var(--white-color);
+   display: inline-block;
+   border-radius: 4em; 
+}
+.banner {
+    position: relative;   
+}
+.banner img{
+    max-width: 100%;
+}
+.banner .welcome{
+    position: absolute;
+    top: 30%;
+    background-color: var(--banner-color); 
+    padding: 10%;
+}
+
+.banner h2{
+    font-size: 2em;
+}
+.banner h2 span{
+    font-weight: 700;
+    font-size: 1.2em;
+}
+nav{
+    background-color: var(--nav-bg-color);   
+    padding: 0.8em;
+    top: 0;
+    position: sticky;
+    top: 100px;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li{
+     width: 25%;
+     display: inline-block;
+     font-size: 1.2em;
+     text-align: center;
+}  
+nav li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: var(--white-color);
+}
+
+nav  li a.joins{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px; 
+}
+article h2{
+    color: var(--primary-color);
+    font-size: 48px;
+}
+article p{
+    line-height: 2em;
+    color: var(--nav-bg-color);
+}
+.images{
+    text-align: center;
+    margin: 80px 0;
+}
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 0 1.2em;
+}
+
+.images li img{
+    max-width: 100%;
+}
+.join{
+    background-color: var(--nav-bg-color);
+    max-width: 100%;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+form input{
+    background-color: var(--white-color);
+    margin: 20px auto;
+    width: 200px;
+    padding: 10px;
+    border: 5px solid var(--white-color);
+    border-radius: 20px;
+}
+footer{
+    background-color: var(--primary-color);
+    max-width: 100%;
+    text-align: center;
+    height: 3em;
+}
+
+footer .copyright{
+    color: var(--white-color);
+    padding: 50px auto;
+    
+}
